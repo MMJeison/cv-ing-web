@@ -7,16 +7,33 @@ interface DividerProps {
 }
 
 export function Divider ({ color, height, width, margin, rounded = false }: DividerProps) {
-  const styles = {}
-  if (height) Object.assign(styles, { height })
-  if (width) Object.assign(styles, { width })
-  if (margin) Object.assign(styles, { margin })
-  if (color) Object.assign(styles, { backgroundColor: color })
+  let classW = ''
+  let classI = 'w-auto h-[1px] bg-gray-500'
+  const stylesW = {}
+  const stylesI = {}
+  if (width === undefined) {
+    classW = 'w-full'
+  } else {
+    Object.assign(stylesW, { width })
+  }
+  if (rounded) {
+    classW += ' rounded-full'
+    classI += ' rounded-full'
+  }
+  if (height !== undefined) {
+    Object.assign(stylesI, { height })
+  }
+  if (color !== undefined) {
+    Object.assign(stylesI, { backgroundColor: color })
+  }
+  if (margin !== undefined) {
+    Object.assign(stylesW, { margin })
+  }
 
-  return <div className={`${!width && 'w-full'} ${rounded && 'rounded-full'}`}>
+  return <div style={stylesW} className={classW}>
     <div
-      className={`w-auto ${!height && 'h-[1px]'} ${!color && 'bg-gray-500'} ${rounded && 'rounded-full'}`}
-      style={styles}
+      className={classI}
+      style={stylesI}
     />
   </div>
 }

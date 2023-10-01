@@ -10,7 +10,7 @@ export function Subtitle ({ component = 'span', aling, children }: SubtitleProps
   if (aling === 'right') _aling = 'text-right'
   if (aling === 'center') _aling = 'text-center'
   return (
-    <Component className={`text-[#121212] text-[50%] font-bold ${_aling}`}>
+    <Component className={`text-[#121212] text-[40%] font-bold ${_aling}`}>
       {children}
     </Component>
   )

@@ -4,7 +4,7 @@ interface SideBarSectionProps {
 
 export function SideBarSection ({ children }: SideBarSectionProps) {
   return (
-    <section className="w-[100%] flex flex-col">
+    <section className="w-[75%] flex flex-col">
       {children}
     </section>
   )

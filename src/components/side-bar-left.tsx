@@ -6,9 +6,9 @@ import { Text } from './text'
 
 export function SideBarLeft () {
   return (
-    <aside className="bg-white w-[22%] flex flex-col items-center gap-2 py-5 px-2">
+    <aside className="sticky top-0 h-screen bg-white w-[22%] flex flex-col items-center gap-2 py-5 px-2">
       <SideBarSection>
-        <div className='relative w-[49%] mx-auto'>
+        <div className='relative w-[50%] mx-auto'>
           <img
             src="/images/profile.jpg"
             alt="Next.js logo"
@@ -16,19 +16,19 @@ export function SideBarLeft () {
           />
           <span className="absolute bottom-0 right-0 bg-[#7eb942] rounded-full w-4 h-4 translate-x-[-90%] translate-y-[-90%]" />
         </div>
-        <div className="w-[49%] flex flex-col items-center gap-1 my-6 mx-auto">
+        <div className="w-[50%] flex flex-col items-center gap-1 my-6 mx-auto">
           <Subtitle>Rayan Adlardard</Subtitle>
           <Text>Front-End Developer</Text>
         </div>
       </SideBarSection>
-      <Divider/>
+      <Divider width='75%'/>
       <SideBarSection>
         <Subtitle>Languages</Subtitle>
         <ProgressBarItem title='Bangla' percentage={5} />
         <ProgressBarItem title='English' percentage={80} />
         <ProgressBarItem title='Spanish' percentage={100} />
       </SideBarSection>
-      <Divider />
+      <Divider width='75%'/>
       <SideBarSection>
         <Subtitle>Programming Languages</Subtitle>
         <ProgressBarItem title='HTML' percentage={90} />

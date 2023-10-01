@@ -10,7 +10,7 @@ export function Text ({ component = 'span', aling, children }: TextProps) {
   if (aling === 'right') _aling = 'text-right'
   if (aling === 'center') _aling = 'text-center'
   return (
-    <Component className={`text-[#4f4f4f] text-[10px] text-center ${_aling}`}>
+    <Component className={`text-[#4f4f4f] text-[15%] text-center ${_aling}`}>
       {children}
     </Component>
   )
