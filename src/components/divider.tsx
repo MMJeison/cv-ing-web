@@ -8,7 +8,7 @@ interface DividerProps {
 
 export function Divider ({ color, height, width, margin, rounded = false }: DividerProps) {
   let classW = ''
-  let classI = 'w-auto h-[1px] bg-gray-500'
+  let classI = 'w-auto h-[1px] bg-gray-300'
   const stylesW = {}
   const stylesI = {}
   if (width === undefined) {

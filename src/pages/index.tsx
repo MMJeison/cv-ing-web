@@ -9,34 +9,41 @@ import Head from 'next/head'
 
 export default function Home () {
   const [width, setWidth] = useState(0)
-  const [pixelRatio, setPixelRatio] = useState(typeof window !== 'undefined' ? window.devicePixelRatio : 1)
+  const [height, setHeight] = useState(0)
+  const [top, setTop] = useState(0)
 
   useEffect(() => {
-    const calculateWidth = () => {
-      const clientHeigt = typeof window !== 'undefined' ? window.innerHeight * pixelRatio : 0
-      setWidth(Math.round(clientHeigt * 1.2))
+    const pixelRatio = window.devicePixelRatio
+    const dHeight = Math.floor(document.documentElement.clientHeight * pixelRatio)
+    const dWidth = Math.ceil(dHeight * 1.7)
+    setWidth(dWidth)
+    setHeight(dHeight)
+    const handleResize = () => {
+      const pixelRatio = window.devicePixelRatio
+      const docHeight = document.documentElement.clientHeight
+      if (pixelRatio > 1) {
+        setHeight(Math.floor(docHeight * pixelRatio))
+        setTop(Math.round(docHeight - (docHeight * pixelRatio)))
+      } else {
+        setHeight(docHeight)
+        setTop(0)
+      }
     }
-    // evento para escuchar cuando se cambia el tamaño de la pantalla
-    const calculatePixelRatio = () => {
-      setPixelRatio(typeof window !== 'undefined' ? window.devicePixelRatio : 1)
-    }
-    window.addEventListener('resize', calculatePixelRatio)
-
-    calculateWidth()
-
+    window.addEventListener('resize', handleResize)
     return () => {
-      window.removeEventListener('resize', calculatePixelRatio)
+      window.removeEventListener('resize', handleResize)
     }
   }, [])
 
   return (
-    <section style={{ width: width !== 0 ? width + 'px' : 'auto' }} className='relative flex gap-[20px] justify-center mx-auto min-h-screen'>
+    <section style={{ width: width !== 0 ? width + 'px' : 'auto' }}
+        className='relative flex gap-[20px] justify-center mx-auto min-h-screen'>
       <Head>
         <title>CV</title>
       </Head>
-      <SideBarLeft />
+      <SideBarLeft top={top} height={height} />
       <Main />
-      <SideBarRight />
+      <SideBarRight top={top} height={height} />
     </section>
   )
 }
