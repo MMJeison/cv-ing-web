@@ -15,7 +15,7 @@ export function SideBarLeft ({ top, height }: SideBarLeftProps) {
     <aside style={{
       top: top + 'px',
       height: height + 'px'
-    }} className="sticky bg-white w-[20%] flex flex-col items-center gap-[0.25em] py-3 px-2">
+    }} className="sticky bg-white w-[20%] flex flex-col items-center gap-[1.3%] py-[1.8%] px-[0.8%]">
       <SideBarSection>
         <div className='relative w-[70%] mx-auto'>
           <img
@@ -25,7 +25,7 @@ export function SideBarLeft ({ top, height }: SideBarLeftProps) {
           />
           <span className="absolute bottom-[9%] right-[9%] bg-[#7eb942] rounded-full w-[12%] aspect-square" />
         </div>
-        <div className="w-[70%] flex flex-col items-center mt-[0.2em] mb-[0.1em] mx-auto">
+        <div className="w-[70%] flex flex-col items-center mt-[1%] mb-[0.8%] mx-auto">
           <Subtitle>Rayan Adlardard</Subtitle>
           <Text>Front-End Developer</Text>
         </div>
@@ -68,19 +68,19 @@ export function SideBarLeft ({ top, height }: SideBarLeftProps) {
       <Divider width='80%'/>
       <SideBarSection>
         <Subtitle>Estra Skills</Subtitle>
-        <div className='flex justify-start items-center gap-[0.1em] my-[0.15em'>
+        <div className='flex justify-start items-center gap-[2%] my-[1%]'>
           <AiOutlineBlock className='w-[1em] h-[1em] text-[#FFB400]' />
           <Text>Bootstrap, Materialize</Text>
         </div>
-        <div className='flex justify-start items-center gap-[0.1em] my-[0.15em]'>
+        <div className='flex justify-start items-center gap-[2%] my-[1%]'>
           <AiOutlineBlock className='w-[1em] h-[1em] text-[#FFB400]' />
           <Text>Stylus, Sass, Less</Text>
         </div>
-        <div className='flex justify-start items-center gap-[0.1em] my-[0.15em]'>
+        <div className='flex justify-start items-center gap-[2%] my-[1%]'>
           <AiOutlineBlock className='w-[1em] h-[1em] text-[#FFB400]' />
           <Text>Gulp, Webpack, Grunt</Text>
         </div>
-        <div className='flex justify-start items-center gap-[0.1em] my-[0.15em]'>
+        <div className='flex justify-start items-center gap-[2%] my-[1%]'>
           <AiOutlineBlock className='w-[1em] h-[1em] text-[#FFB400]' />
           <Text>GIT Knowledge</Text>
         </div>

@@ -18,7 +18,7 @@ export function Text ({ component = 'span', aling, color, children }: TextProps)
     classI = 'text-[#767676]'
   }
   return (
-    <Component style={stylesI} className={`${classI} text-[0.73em] font-[450] ${_aling}`}>
+    <Component style={stylesI} className={`${classI} text-[95%] font-[450] ${_aling}`}>
       {children}
     </Component>
   )
