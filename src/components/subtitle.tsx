@@ -18,7 +18,7 @@ export function Subtitle ({ component = 'span', aling, color, children }: Subtit
     classI = 'text-[#121212]'
   }
   return (
-    <Component style={stylesI} className={`${classI} text-[110%] font-medium ${_aling}`}>
+    <Component style={stylesI} className={`${classI} text-[0.9em] font-medium ${_aling}`}>
       {children}
     </Component>
   )
