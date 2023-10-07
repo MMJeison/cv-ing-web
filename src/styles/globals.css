@@ -8,5 +8,6 @@
 }
 
 body {
-  @apply bg-[#f0f0f6];
+  @apply bg-[#c7c7c7];
+  font-family: 'Inter', sans-serif;
 }

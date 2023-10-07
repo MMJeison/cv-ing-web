@@ -15,9 +15,9 @@ export function SideBarLeft ({ top, height }: SideBarLeftProps) {
     <aside style={{
       top: top + 'px',
       height: height + 'px'
-    }} className="sticky bg-white w-[20%] flex flex-col items-center gap-[0.3em] py-4 px-2">
+    }} className="sticky bg-white w-[20%] flex flex-col items-center gap-[0.25em] py-3 px-2">
       <SideBarSection>
-        <div className='relative w-[65%] mx-auto'>
+        <div className='relative w-[70%] mx-auto'>
           <img
             src="/images/profile.jpg"
             alt="Next.js logo"
@@ -25,7 +25,7 @@ export function SideBarLeft ({ top, height }: SideBarLeftProps) {
           />
           <span className="absolute bottom-[9%] right-[9%] bg-[#7eb942] rounded-full w-[12%] aspect-square" />
         </div>
-        <div className="w-[65%] flex flex-col items-center gap-[2%] mt-[0.3em] mb-[0.15em] mx-auto">
+        <div className="w-[70%] flex flex-col items-center mt-[0.2em] mb-[0.1em] mx-auto">
           <Subtitle>Rayan Adlardard</Subtitle>
           <Text>Front-End Developer</Text>
         </div>
@@ -33,20 +33,20 @@ export function SideBarLeft ({ top, height }: SideBarLeftProps) {
       <Divider width='80%'/>
       <SideBarSection>
         <div className='flex justify-between items-center'>
-          <Text>Age:</Text>
-          <Text>25</Text>
+          <Text color='#2B2B2B'>Age:</Text>
+          <Text color='#2B2B2B'>25</Text>
         </div>
         <div className='flex justify-between items-center'>
-          <Text>Residence:</Text>
-          <Text>BD</Text>
+          <Text color='#2B2B2B'>Residence:</Text>
+          <Text color='#2B2B2B'>BD</Text>
         </div>
         <div className='flex justify-between items-center'>
-          <Text>Freelance:</Text>
+          <Text color='#2B2B2B'>Freelance:</Text>
           <Text color='#7EB942'>Aveilable</Text>
         </div>
         <div className='flex justify-between items-center'>
-          <Text>Address:</Text>
-          <Text>Dhaka, Bangladesh</Text>
+          <Text color='#2B2B2B'>Address:</Text>
+          <Text color='#2B2B2B'>Dhaka, Bangladesh</Text>
         </div>
       </SideBarSection>
       <Divider width='80%'/>

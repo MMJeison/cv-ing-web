@@ -15,10 +15,10 @@ export function Text ({ component = 'span', aling, color, children }: TextProps)
   if (color !== undefined) {
     Object.assign(stylesI, { color })
   } else {
-    classI = 'text-[#4f4f4f]'
+    classI = 'text-[#767676]'
   }
   return (
-    <Component style={stylesI} className={`${classI} text-[0.73em] text-center font-[450] ${_aling}`}>
+    <Component style={stylesI} className={`${classI} text-[0.73em] font-[450] ${_aling}`}>
       {children}
     </Component>
   )
