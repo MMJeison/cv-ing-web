@@ -15,16 +15,27 @@ export default function Home () {
 
   useEffect(() => {
     const pixelRatio = window.devicePixelRatio
-    const dHeight = Math.floor(document.documentElement.clientHeight * pixelRatio)
-    const dWidth = Math.ceil(dHeight * 1.7)
+    const diff = pixelRatio > 1 ? pixelRatio - 1 : 0
+    const dHeight = Math.max(document.documentElement.clientHeight, 649 - (diff * 649)) * pixelRatio
+    const dWidth = dHeight * 1.7
+    const tSize = dHeight * 0.0169521
+    const sSize = dHeight * 0.0208998
+    const ttSize = dHeight * 0.034833
+    const ttSizeLg = dHeight * 0.046444
+    document.documentElement.style.setProperty('--text-size', `${tSize}px`)
+    document.documentElement.style.setProperty('--subtitle-size', `${sSize}px`)
+    document.documentElement.style.setProperty('--title-size', `${ttSize}px`)
+    document.documentElement.style.setProperty('--title-size-lg', `${ttSizeLg}px`)
     setWidth(dWidth)
     setHeight(dHeight)
     const handleResize = () => {
       const pixelRatio = window.devicePixelRatio
-      const docHeight = document.documentElement.clientHeight
+      const diff = pixelRatio > 1 ? pixelRatio - 1 : 0
+      const docHeight = Math.max(document.documentElement.clientHeight, 649 - (diff * 649))
       if (pixelRatio > 1) {
-        setHeight(Math.floor(docHeight * pixelRatio))
-        setTop(Math.round(docHeight - (docHeight * pixelRatio)))
+        const nHeight = docHeight * pixelRatio
+        setHeight(nHeight)
+        setTop(docHeight - nHeight)
       } else {
         setHeight(docHeight)
         setTop(0)

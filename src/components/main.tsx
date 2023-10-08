@@ -14,28 +14,28 @@ export function Main () {
           <h1 className="text-[2em] font-bold">
             I’m Rayan Adlrdard
           </h1>
-          <h1 className="text-[2em] font-bold mb-1">
+          <h1 style={{ fontSize: 'var(--title-size-lg)' }} className="font-bold mb-1">
             <span className="text-[#FFB400]">Front-end</span> Developer
           </h1>
           <Text>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, volutpat feugiat placerat lobortis. Natoque rutrum semper sed suspendisse nunc lectus.
           </Text>
-          <button className='flex gap-1 items-center bg-[#FFB400] rounded-sm py-2 px-4 text-sm mt-6'>
+          <button style={{ fontSize: 'var(--subtitle-size)' }} className='flex gap-1 items-center bg-[#FFB400] rounded-sm py-2 px-4 mt-6'>
             HIRE ME
             <HiOutlineArrowRight />
           </button>
         </div>
-        <div className="w-[35%] h-full flex items-end">
+        <div className="w-[37%] h-full flex items-end">
           <img
               src="/images/profile-removebg.png"
               alt="Next.js logo"
-              className="w-full h-auto"
+              className="h-full w-auto max-w-full object-cover bg-center"
             />
         </div>
       </section>
       <section className='w-full flex flex-col items-center gap-7'>
         <div className='w-[50%] flex flex-col items-center gap-2'>
-          <h2 className='text-[1.5em] font-bold'>My Knowledge</h2>
+          <h2 style={{ fontSize: 'var(--title-size)' }} className='font-bold'>My Knowledge</h2>
           <Text aling='center'>
             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum
           </Text>

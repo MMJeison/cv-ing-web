@@ -11,14 +11,17 @@ export function Subtitle ({ component = 'span', aling, color, children }: Subtit
   if (aling === 'right') _aling = 'text-right'
   if (aling === 'center') _aling = 'text-center'
   let classI = ''
-  const stylesI = {}
+  const stylesI = {
+    fontSize: 'var(--subtitle-size)'
+  }
   if (color !== undefined) {
     Object.assign(stylesI, { color })
   } else {
     classI = 'text-[#121212]'
   }
+  // text-[0.9em]
   return (
-    <Component style={stylesI} className={`${classI} text-[0.9em] font-medium ${_aling}`}>
+    <Component style={stylesI} className={`${classI} font-medium ${_aling}`}>
       {children}
     </Component>
   )
