@@ -20,9 +20,10 @@ export function Knowledge () {
         <div className='w-full flex justify-between'>
           <KnowledgeCard icon={<SoundIcon />} title='Sound Design' text='Voice Over, Beat Making' />
           <KnowledgeCard icon={<PhotographerIcon />} title='Photography' text='Portrait, Product Photography' />
-          <KnowledgeCard title='Advertising'
+          <KnowledgeCard icon={<PcIcon1 />} title='Web Development' text='Blog, E-Commerce' />
+          {/* <KnowledgeCard title='Advertising'
             text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi.'
-            btn='ORDER NOW' />
+            btn='ORDER NOW' /> */}
         </div>
       </div>
     </section>

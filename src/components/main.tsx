@@ -12,6 +12,7 @@ export function Main () {
   const togglePopUp = () => { setShowPopUp(!showPopUp) }
   return (
     <main className="w-full flex flex-col items-center gap-7">
+      <ProfilePopUp show={showPopUp} setShow={setShowPopUp} />
       <section className="bg-white w-full max-h-[23em] flex justify-between items-center px-[4%]">
         <div className="w-[55%] py-3">
           <h1 style={{ fontSize: 'var(--title-size-lg)' }} className="font-bold">
@@ -25,7 +26,6 @@ export function Main () {
           </Text>
           <button onClick={togglePopUp}
             style={{ fontSize: 'var(--subtitle-size)' }} className='flex gap-1 items-center bg-[#FFB400] rounded-sm py-2 px-4 mt-6'>
-            <ProfilePopUp show={showPopUp} setShow={setShowPopUp} />
             <Subtitle>HIRE ME</Subtitle>
             <HiOutlineArrowRight />
           </button>

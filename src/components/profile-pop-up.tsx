@@ -10,8 +10,8 @@ interface PopUpWrapperProps {
 export function ProfilePopUp ({ show, setShow }: PopUpWrapperProps) {
   return (
     <PopUpWrapper show={show} setShow={setShow}>
-      <div className='w-[20em] flex flex-col items-center gap-2'>
-        <Subtitle>Profile</Subtitle>
+      <div className='w-[20em] flex flex-col items-center gap-2 p-3'>
+        <Subtitle>Thank you for wanting to hire me </Subtitle>
         <Text align='center'>
         I am a passionate and creative individual with a strong interest in the field of design. My goal is to become a professional designer and to work in an environment that will allow me to use my skills to the fullest.
         </Text>

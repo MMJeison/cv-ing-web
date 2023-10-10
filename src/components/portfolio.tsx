@@ -1,5 +1,43 @@
 import { Text } from './text'
-import { PortfolioCard } from './portfolio-card'
+import { PortfolioCard, type PortfolioCardProps } from './portfolio-card'
+
+const portfolioCards: PortfolioCardProps[] = [
+  {
+    img: '/images/img-test.png',
+    title: 'How to make web templates',
+    shortDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna',
+    fullDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum. a urna',
+    repoLink: 'https://github.com/'
+  },
+  {
+    img: '/images/img-test.png',
+    title: 'The best way to learn web development',
+    shortDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna',
+    fullDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum. a urna',
+    repoLink: 'https://github.com/'
+  },
+  {
+    img: '/images/img-test.png',
+    title: 'Why you should learn web development',
+    shortDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna',
+    fullDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum. a urna',
+    repoLink: 'https://github.com/'
+  },
+  {
+    img: '/images/img-test.png',
+    title: 'How to make templates for web',
+    shortDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna',
+    fullDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum. a urna',
+    repoLink: 'https://github.com/'
+  },
+  {
+    img: '/images/img-test.png',
+    title: 'Why you should try web development',
+    shortDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna',
+    fullDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum. a urna',
+    repoLink: 'https://github.com/'
+  }
+]
 
 export function Portfolio () {
   return (
@@ -11,19 +49,9 @@ export function Portfolio () {
         </Text>
       </div>
       <div className='w-full flex gap-7 py-1 overflow-x-auto scrollbar'>
-        <PortfolioCard img='/images/img-test.png' title='How to make web templates' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna' />
-        <PortfolioCard img='/images/img-test.png' title='How to make web templates' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna' />
-        <PortfolioCard img='/images/img-test.png' title='How to make web templates' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna' />
-        <PortfolioCard img='/images/img-test.png' title='How to make web templates' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna' />
-        <PortfolioCard img='/images/img-test.png' title='How to make web templates' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna' />
-        <PortfolioCard img='/images/img-test.png' title='How to make web templates' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna' />
-        <PortfolioCard img='/images/img-test.png' title='How to make web templates' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna' />
-        <PortfolioCard img='/images/img-test.png' title='How to make web templates' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna' />
-        <PortfolioCard img='/images/img-test.png' title='How to make web templates' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna' />
-        <PortfolioCard img='/images/img-test.png' title='How to make web templates' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna' />
-        <PortfolioCard img='/images/img-test.png' title='How to make web templates' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna' />
-        <PortfolioCard img='/images/img-test.png' title='How to make web templates' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna' />
-        <PortfolioCard img='/images/img-test.png' title='How to make web templates' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna' />
+        {portfolioCards.map((card, _) => (
+          <PortfolioCard key={card.title} {...card} />
+        ))}
       </div>
     </section>
   )
