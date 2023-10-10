@@ -11,13 +11,13 @@ interface KnowledgeCardProps {
 
 export function KnowledgeCard ({ icon, title, text, btn }: KnowledgeCardProps) {
   return (
-    <div className="bg-white flex flex-col justify-center items-center gap-1 w-[30%] h-[10em] min-w-[10em] p-4">
+    <div className="bg-white flex flex-col justify-center items-center gap-1 w-[30%] min-w-[10em] px-[2.5%] py-[3%]">
       {icon && <span className='w-[25%] aspect-square text-[#FFB400]'>
         {icon}
       </span>}
       <Subtitle>{title}</Subtitle>
       <Text aling='center'>{text}</Text>
-      {btn && <button className='flex items-center gap-1 text-[#FFB400] rounded-sm py-1 px-2 text-[0.6em] font-bold'>
+      {btn && <button style={{ fontSize: 'var(--text-size)' }} className='flex items-center gap-1 text-[#FFB400] rounded-sm py-1 px-2'>
         <span>{btn}</span>
         <HiOutlineChevronRight />
       </button>}

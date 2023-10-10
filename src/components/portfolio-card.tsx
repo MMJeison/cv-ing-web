@@ -12,7 +12,7 @@ export function PortfolioCard ({ img, title, description }: PortfolioCardProps) 
   return (
     <div className='min-w-[35%] bg-white'>
       <div className='w-full bg-[#F6F6F6] rounded-lg flex justify-center items-center'>
-        <img src={img} alt={title} className='w-full aspect-square object-cover' />
+        <img src={img} alt={title} className='w-full aspect-video object-contain' />
       </div>
       <div className='w-full flex flex-col gap-2 p-4'>
         <Subtitle>{title}</Subtitle>

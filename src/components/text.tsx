@@ -11,14 +11,17 @@ export function Text ({ component = 'span', aling, color, children }: TextProps)
   if (aling === 'right') _aling = 'text-right'
   if (aling === 'center') _aling = 'text-center'
   let classI = ''
-  const stylesI = {}
+  const stylesI = {
+    fontSize: 'var(--text-size)'
+  }
   if (color !== undefined) {
     Object.assign(stylesI, { color })
   } else {
     classI = 'text-[#767676]'
   }
+  // text-[0.73em]
   return (
-    <Component style={stylesI} className={`${classI} text-[0.73em] font-[450] ${_aling}`}>
+    <Component style={stylesI} className={`${classI} font-[450] ${_aling}`}>
       {children}
     </Component>
   )

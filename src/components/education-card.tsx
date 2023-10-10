@@ -15,7 +15,7 @@ export function EducationCard ({ institution, date, title, description }: Educat
         <Subtitle>{institution}</Subtitle>
         <div className='flex gap-3 items-center'>
           <Text color='#2B2B2B'>Student</Text>
-          <span className='text-white bg-[#FFB400] text-[0.55em] h-[1.6em] px-1 rounded-[1px] flex items-center'>{date}</span>
+          <span style={{ fontSize: 'var(--text-size)' }} className='text-white bg-[#FFB400] h-[1.6em] px-1 rounded-[1px] flex items-center'>{date}</span>
         </div>
       </div>
       <div className="w-[58%] flex flex-col justify-start items-start gap-3">

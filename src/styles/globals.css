@@ -7,6 +7,13 @@
   @apply box-border m-0 p-0;
 }
 
+:root {
+  --text-size: 1rem;
+  --subtitle-size: 1.5rem;
+  --title-size: 2rem;
+  --title-size-lg: 2.5rem;
+}
+
 body {
   @apply bg-[#c7c7c7];
   font-family: 'Inter', sans-serif;
