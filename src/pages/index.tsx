@@ -17,6 +17,7 @@ export default function Home () {
     const pixelRatio = window.devicePixelRatio
     const diff = pixelRatio > 1 ? pixelRatio - 1 : 0
     const dHeight = Math.max(document.documentElement.clientHeight, 649 - (diff * 649)) * pixelRatio
+    console.log(dHeight)
     const dWidth = dHeight * 1.7
     const tSize = dHeight * 0.0169521
     const sSize = dHeight * 0.0208998
