@@ -12,7 +12,7 @@ const skills: SkillItemProps[] = [
 export function Skills () {
   return (
     <SideBarSection>
-      <Subtitle>Estra Skills</Subtitle>
+      <Subtitle>Extra Skills</Subtitle>
       {skills.map((skill, _) => (
         <SkillItem key={skill.skill} skill={skill.skill} />
       ))}

@@ -10,20 +10,20 @@ export function Portfolio () {
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum
         </Text>
       </div>
-      <div className='w-full flex gap-7 py-2 overflow-x-auto'>
-        <PortfolioCard img='/images/img-test.png' title='How to make web tempates' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna' />
-        <PortfolioCard img='/images/img-test.png' title='How to make web tempates' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna' />
-        <PortfolioCard img='/images/img-test.png' title='How to make web tempates' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna' />
-        <PortfolioCard img='/images/img-test.png' title='How to make web tempates' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna' />
-        <PortfolioCard img='/images/img-test.png' title='How to make web tempates' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna' />
-        <PortfolioCard img='/images/img-test.png' title='How to make web tempates' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna' />
-        <PortfolioCard img='/images/img-test.png' title='How to make web tempates' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna' />
-        <PortfolioCard img='/images/img-test.png' title='How to make web tempates' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna' />
-        <PortfolioCard img='/images/img-test.png' title='How to make web tempates' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna' />
-        <PortfolioCard img='/images/img-test.png' title='How to make web tempates' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna' />
-        <PortfolioCard img='/images/img-test.png' title='How to make web tempates' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna' />
-        <PortfolioCard img='/images/img-test.png' title='How to make web tempates' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna' />
-        <PortfolioCard img='/images/img-test.png' title='How to make web tempates' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna' />
+      <div className='w-full flex gap-7 py-1 overflow-x-auto scrollbar'>
+        <PortfolioCard img='/images/img-test.png' title='How to make web templates' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna' />
+        <PortfolioCard img='/images/img-test.png' title='How to make web templates' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna' />
+        <PortfolioCard img='/images/img-test.png' title='How to make web templates' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna' />
+        <PortfolioCard img='/images/img-test.png' title='How to make web templates' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna' />
+        <PortfolioCard img='/images/img-test.png' title='How to make web templates' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna' />
+        <PortfolioCard img='/images/img-test.png' title='How to make web templates' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna' />
+        <PortfolioCard img='/images/img-test.png' title='How to make web templates' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna' />
+        <PortfolioCard img='/images/img-test.png' title='How to make web templates' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna' />
+        <PortfolioCard img='/images/img-test.png' title='How to make web templates' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna' />
+        <PortfolioCard img='/images/img-test.png' title='How to make web templates' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna' />
+        <PortfolioCard img='/images/img-test.png' title='How to make web templates' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna' />
+        <PortfolioCard img='/images/img-test.png' title='How to make web templates' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna' />
+        <PortfolioCard img='/images/img-test.png' title='How to make web templates' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna' />
       </div>
     </section>
   )

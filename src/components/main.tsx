@@ -7,10 +7,10 @@ import { Portfolio } from './portfolio'
 export function Main () {
   return (
     <main className="w-full flex flex-col items-center gap-7">
-      <section className="bg-white w-full aspect-[16/5] flex justify-between items-center px-[4%]">
+      <section className="bg-white w-full aspect-[16/5] max-h-[20em] flex justify-between items-center px-[4%]">
         <div className="w-[55%]">
-          <h1 className="text-[2em] font-bold">
-            I’m Rayan Adlrdard
+          <h1 style={{ fontSize: 'var(--title-size-lg)' }} className="font-bold">
+            I’m Jeison Moncayo
           </h1>
           <h1 style={{ fontSize: 'var(--title-size-lg)' }} className="font-bold mb-1">
             <span className="text-[#FFB400]">Front-end</span> Developer

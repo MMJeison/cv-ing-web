@@ -20,17 +20,9 @@ const programingLanguages: LanguageItemProps[] = [
   { language: 'WordPress', percentage: 20 }
 ]
 
-interface SideBarLeftProps {
-  top: number
-  height: number
-}
-
-export function SideBarLeft ({ top, height }: SideBarLeftProps) {
+export function SideBarLeft () {
   return (
-    <aside style={{
-      top: top + 'px',
-      height: height + 'px'
-    }} className="sticky bg-white w-[20%] flex flex-col items-center gap-[0.6%] py-[1em] px-[0.7%]">
+    <aside className="fixed top-0 left-0 h-screen bg-white w-[20%] flex flex-col items-center gap-[0.6%] py-[1em] px-[0.7%]">
       <SideBarSection>
         <div className='relative w-[70%] mx-auto'>
           <img
@@ -41,7 +33,7 @@ export function SideBarLeft ({ top, height }: SideBarLeftProps) {
           <span className="absolute bottom-[9%] right-[9%] bg-[#7eb942] rounded-full w-[12%] aspect-square" />
         </div>
         <div className="w-[70%] flex flex-col items-center mt-[1%] mb-[0.5%] mx-auto">
-          <Subtitle>Rayan Adlardard</Subtitle>
+          <Subtitle>Jeison Moncayo</Subtitle>
           <Text>Front-End Developer</Text>
         </div>
       </SideBarSection>

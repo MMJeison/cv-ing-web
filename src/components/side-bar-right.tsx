@@ -3,17 +3,9 @@ import { FaFacebookF, FaLinkedinIn, FaTwitter, FaYoutube, FaDribbble } from 'rea
 import { AiFillInstagram } from 'react-icons/ai'
 import { Subtitle } from './subtitle'
 
-interface SideBarRightProps {
-  top: number
-  height: number
-}
-
-export function SideBarRight ({ top, height }: SideBarRightProps) {
+export function SideBarRight () {
   return (
-    <aside style={{
-      top: top + 'px',
-      height: height + 'px'
-    }} className="sticky top-0 bg-white w-[5%] flex flex-col items-center py-4 gap-2">
+    <aside className="fixed top-0 right-0 h-screen bg-white w-[5%] flex flex-col items-center py-4 gap-2">
       <Subtitle>Links</Subtitle>
       <IconLink icon={<FaFacebookF className='w-full h-full'/>} />
       <IconLink icon={<AiFillInstagram className='w-full h-full'/>} />
