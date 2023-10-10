@@ -3,10 +3,10 @@ import { SkillItem, type SkillItemProps } from './skill-item'
 import { Subtitle } from './subtitle'
 
 const skills: SkillItemProps[] = [
-  { skill: 'Bootstrap, Materialize' },
+  { skill: 'Node.js, Express.js' },
   { skill: 'React, Next.js' },
   { skill: 'Tailwind CSS' },
-  { skill: 'Node.js, Express.js' }
+  { skill: 'Bootstrap, MaterialUI' }
 ]
 
 export function Skills () {

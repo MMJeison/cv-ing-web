@@ -4,9 +4,9 @@ import { PortfolioCard } from './portfolio-card'
 export function Portfolio () {
   return (
     <section className='w-full flex flex-col items-center gap-7 overflow-hidden'>
-      <div className='w-[50%] flex flex-col items-center gap-2'>
+      <div className='w-[70%] flex flex-col items-center gap-2'>
         <h2 style={{ fontSize: 'var(--title-size)' }} className='font-bold'>Portfolio</h2>
-        <Text aling='center'>
+        <Text align='center'>
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum
         </Text>
       </div>

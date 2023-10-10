@@ -7,16 +7,16 @@ import { Portfolio } from './portfolio'
 export function Main () {
   return (
     <main className="w-full flex flex-col items-center gap-7">
-      <section className="bg-white w-full aspect-[16/5] max-h-[20em] flex justify-between items-center px-[4%]">
-        <div className="w-[55%]">
+      <section className="bg-white w-full max-h-[23em] flex justify-between items-center px-[4%]">
+        <div className="w-[55%] py-3">
           <h1 style={{ fontSize: 'var(--title-size-lg)' }} className="font-bold">
-            I’m Jeison Moncayo
+            I&rsquo;m Jeison Moncayo
           </h1>
           <h1 style={{ fontSize: 'var(--title-size-lg)' }} className="font-bold mb-1">
             <span className="text-[#FFB400]">Front-end</span> Developer
           </h1>
           <Text>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, volutpat feugiat placerat lobortis. Natoque rutrum semper sed suspendisse nunc lectus.
+          Passionate about the world of programming and the creation of innovative solutions that simplify people&apos;s lives. With a solid knowledge of various technologies and a meticulous focus on code quality, I am committed to driving technological progress and overcoming complex challenges.
           </Text>
           <button style={{ fontSize: 'var(--subtitle-size)' }} className='flex gap-1 items-center bg-[#FFB400] rounded-sm py-2 px-4 mt-6'>
             HIRE ME

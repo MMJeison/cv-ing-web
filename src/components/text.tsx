@@ -1,15 +1,15 @@
 interface TextProps {
   children: React.ReactNode
-  aling?: 'left' | 'center' | 'right'
+  align?: 'left' | 'center' | 'right'
   color?: `#${string}`
   component?: React.ElementType
 }
 
-export function Text ({ component = 'span', aling, color, children }: TextProps) {
+export function Text ({ component = 'span', align, color, children }: TextProps) {
   const Component = component
-  let _aling = 'text-left'
-  if (aling === 'right') _aling = 'text-right'
-  if (aling === 'center') _aling = 'text-center'
+  let _align = 'text-left'
+  if (align === 'right') _align = 'text-right'
+  if (align === 'center') _align = 'text-center'
   let classI = ''
   const stylesI = {
     fontSize: 'var(--text-size)'
@@ -21,7 +21,7 @@ export function Text ({ component = 'span', aling, color, children }: TextProps)
   }
   // text-[0.73em]
   return (
-    <Component style={stylesI} className={`${classI} font-[450] ${_aling}`}>
+    <Component style={stylesI} className={`${classI} font-[450] ${_align}`}>
       {children}
     </Component>
   )

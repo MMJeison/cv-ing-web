@@ -1,5 +1,5 @@
 // import { Inter } from 'next/font/google'
-
+import { useEffect } from 'react'
 import { SideBarLeft } from '@/components/side-bar-left'
 import { SideBarRight } from '@/components/side-bar-right'
 import { Main } from '@/components/main'
@@ -9,6 +9,10 @@ import Head from 'next/head'
 // const inter = Inter({ subsets: ['latin'] })
 
 export default function Home () {
+  useEffect(() => {
+    console.log(window.innerWidth)
+    console.log(window.innerHeight)
+  }, [])
   return (
     <section className='relative flex justify-center mx-auto w-full min-h-screen bg-[#f0f0f6]'>
       <Head>

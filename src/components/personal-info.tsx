@@ -4,20 +4,20 @@ import { PersonalInfoItem, type PersonalInfoItemProps } from './personal-info-it
 const data: PersonalInfoItemProps[] = [
   {
     label: 'Age',
-    value: '25'
+    value: '21'
   },
   {
     label: 'Residence',
-    value: 'BD'
+    value: 'Medellin, Colombia'
   },
   {
-    label: 'Freelance',
-    value: 'Available',
-    colorValue: '#7eb942'
+    label: 'E-mail',
+    value: 'jeisondmm29@gmail.com',
+    link: 'mailto://jeisondmm29@gmail.com'
   },
   {
-    label: 'Address',
-    value: 'Dhaka, Bangladesh'
+    label: 'Phone number',
+    value: '+57 3137167437'
   }
 ]
 

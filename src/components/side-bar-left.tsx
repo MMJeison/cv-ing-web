@@ -8,16 +8,16 @@ import { Languages } from './languages'
 import { type LanguageItemProps } from './laguage-item'
 
 const languages: LanguageItemProps[] = [
-  { language: 'English', percentage: 80 },
+  { language: 'English', percentage: 70 },
   { language: 'Spanish', percentage: 100 }
 ]
 
 const programingLanguages: LanguageItemProps[] = [
   { language: 'HTML', percentage: 90 },
   { language: 'CSS', percentage: 90 },
-  { language: 'JavaScript', percentage: 85 },
-  { language: 'PHP', percentage: 70 },
-  { language: 'WordPress', percentage: 20 }
+  { language: 'JavaScript', percentage: 95 },
+  { language: 'Java', percentage: 70 },
+  { language: 'C#', percentage: 50 }
 ]
 
 export function SideBarLeft () {

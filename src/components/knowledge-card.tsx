@@ -16,7 +16,7 @@ export function KnowledgeCard ({ icon, title, text, btn }: KnowledgeCardProps) {
         {icon}
       </span>}
       <Subtitle>{title}</Subtitle>
-      <Text aling='center'>{text}</Text>
+      <Text align='center'>{text}</Text>
       {btn && <button style={{ fontSize: 'var(--text-size)' }} className='flex items-center gap-1 text-[#FFB400] rounded-sm py-1 px-2'>
         <span>{btn}</span>
         <HiOutlineChevronRight />
