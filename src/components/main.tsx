@@ -1,10 +1,15 @@
-import { HiOutlineArrowRight } from 'react-icons/hi'
+import { useState } from 'react'
 import { Text } from './text'
+import { Subtitle } from './subtitle'
 import { Knowledge } from './knowledge'
 import { Education } from './education'
 import { Portfolio } from './portfolio'
+import { ProfilePopUp } from './profile-pop-up'
+import { HiOutlineArrowRight } from 'react-icons/hi'
 
 export function Main () {
+  const [showPopUp, setShowPopUp] = useState(false)
+  const togglePopUp = () => { setShowPopUp(!showPopUp) }
   return (
     <main className="w-full flex flex-col items-center gap-7">
       <section className="bg-white w-full max-h-[23em] flex justify-between items-center px-[4%]">
@@ -18,8 +23,10 @@ export function Main () {
           <Text>
           Passionate about the world of programming and the creation of innovative solutions that simplify people&apos;s lives. With a solid knowledge of various technologies and a meticulous focus on code quality, I am committed to driving technological progress and overcoming complex challenges.
           </Text>
-          <button style={{ fontSize: 'var(--subtitle-size)' }} className='flex gap-1 items-center bg-[#FFB400] rounded-sm py-2 px-4 mt-6'>
-            HIRE ME
+          <button onClick={togglePopUp}
+            style={{ fontSize: 'var(--subtitle-size)' }} className='flex gap-1 items-center bg-[#FFB400] rounded-sm py-2 px-4 mt-6'>
+            <ProfilePopUp show={showPopUp} setShow={setShowPopUp} />
+            <Subtitle>HIRE ME</Subtitle>
             <HiOutlineArrowRight />
           </button>
         </div>
