@@ -10,7 +10,6 @@ const skills: SkillItemProps[] = [
 ]
 
 export function Skills () {
-  const myvar = "test";
   return (
     <SideBarSection>
       <Subtitle>Estra Skills</Subtitle>
